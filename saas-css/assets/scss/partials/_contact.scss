@@ -1,0 +1,102 @@
+// Contact section start
+#contact{
+    width: 100%;
+    .container{
+        max-width: 90%;
+        margin: 10% auto;
+        display: flex;  
+        flex-direction: column;
+        // align-items: center;
+        .row{
+            .title{
+                text-align: center;
+                padding-bottom: 60px;
+
+                span{
+                    color: $gray;
+                    font-size: 30px;
+                    font-weight: 300;
+                    letter-spacing: 1.2px;
+                }
+                h2{
+                    font-size: 30px;
+                    font-weight: 800;
+                    line-height: 25px;
+                    position: relative;
+                    display: inline-block;
+                }
+                h2::after{
+                    content: "";
+                    background-color: $background-color;
+                    width: 90px;
+                    height: 1px;
+                    position: absolute;
+                    top: 45px;
+                    left: 30px;
+                }
+                p{
+                    margin-top: 30px;
+                    color: $gray;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+            }
+            
+        }
+        form{
+                position: relative;
+            
+            i{
+                position: absolute;
+                    left: 10px;
+                    top: 15px;
+                   font-size: 13px;
+            }
+            }
+            .input-with-icon{
+                display: flex;
+                justify-content: center;
+                position: relative;
+                margin-top: 20px;
+
+                input{
+                    width: 608px;    
+                    height: 48px;
+                    padding-left: 30px;
+                    border: 1px solid $gray;
+                }
+            }
+            .textarea-with-icon {
+                display: flex;
+                justify-content: center;
+                position: relative;
+                margin-top: 20px;
+
+                textarea{
+                    width: 608px;
+                    height: 100px;
+                    padding-left: 30px;
+                    padding-top: 10px;
+                    border: 1px solid $gray;
+                }
+            }
+            #submit-button{
+                border: none;
+                position: absolute;
+                background-color: $gray;
+                width: 140px;
+                height: 40px;
+                font-weight: 600;
+                color: $primary-color;
+                top: 280px;
+                // left: 45%;
+                left:250px;
+            }
+            #submit-button:hover{
+                opacity: .7;
+                transition: 0.3s;
+                cursor: pointer;
+            }   
+        }
+    }
+/* Contact section ends */

@@ -1,0 +1,99 @@
+@import '../variables/colors';
+
+/* About section start */
+#about {
+    width: 100%;
+
+    .container {
+        max-width: 90%;
+        margin: 10% auto;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .content {
+        display: flex;
+        padding-top: 30px;
+
+    }
+}
+
+.title {
+    h2 {
+        position: relative;
+        line-height: 25px;
+        font-size: 30px;
+        display: inline-block;
+    }
+
+    h2 span {
+        color: $gray;
+        font-weight: 400;
+    }
+
+    h2::after {
+        content: "";
+        position: absolute;
+        width: 45px;
+        height: 1px;
+        background-color: $background-color;
+        top: 45px;
+        left: 40px;
+    }
+
+    p {
+        color: gray;
+        padding-top: 40px;
+        font-size: 14px;
+        letter-spacing: 1.5;
+    }
+}
+
+.content {
+    .image {
+        max-width: 100%;
+    }
+
+    .bio {
+
+        h3 span {
+            font-weight: 300;
+        }
+
+        p {
+            color: $gray;
+            font-size: 14px;
+            padding-top: 15px;
+            letter-spacing: 1.8px;
+            line-height: 1.6;
+        }
+
+        .btn-about {
+            background-color: $secondary-color;
+            height: 40px;
+            width: 140px;
+            border: none;
+            margin-top: 65px;
+        }
+
+        .btn-about a {
+            text-decoration: none;
+            text-align: center;
+            display: inline-block;
+            padding: 10px 25px;
+            font-size: 14px;
+            color: $primary-color;
+            font-weight: 600;
+            letter-spacing: 0.4px;
+        }
+
+        .btn-about:hover {
+            opacity: 0.6;
+            transition: 0.3s;
+        }
+    }
+}
+
+/* About section ends */

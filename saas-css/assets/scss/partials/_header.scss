@@ -1,0 +1,72 @@
+@import '../variables/colors';
+
+// Header start
+header {
+    width: 100%;
+
+    nav {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 50px;
+        background-color: $background-color;
+        position: fixed;
+        left: 0;
+        right: 0;
+        z-index: 99;
+    }
+}
+
+nav {
+    #menu-btn {
+        display: none;
+    }
+
+    .navbar-logo {
+        width: 40%;
+    }
+
+    .nav-links {
+        display: flex;
+        justify-content: space-around;
+        width: 40%;
+    }
+}
+
+.navbar-logo {
+    h2 {
+        font-size: 20px;
+        color: $primary-color;
+        font-weight: 400;
+    }
+
+    span {
+        font-weight: 800;
+    }
+
+}
+
+.nav-links {
+    li {
+        list-style: none;
+    }
+
+    a {
+        color:$primary-color;
+        font-size: 15px;
+        letter-spacing: 1.1px;
+        line-height: 20px;
+        font-weight: 300;
+        text-decoration: none;
+        padding: 10px 15px;
+    }
+
+    li:first-child a {
+        font-weight: 700;
+        color:$primary-color;
+    }
+}
+
+// Header ends
